@@ -165,6 +165,7 @@ button {
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
+    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -813,7 +814,7 @@ textarea {
 @media screen and (max-width: 767px) {
   .hero {
     background-color: var(--primary-dark-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img-mobile.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/hero-img-mobile.jpg");
     background-size: cover;
     max-width: 480px;
     text-align: center;
@@ -843,7 +844,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .hero {
     background-color: var(--primary-dark-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img-tablet.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/hero-img-tablet.jpg");
     background-size: cover;
     max-width: 768px;
     text-align: center;
@@ -866,7 +867,7 @@ textarea {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-bg-color);
-    width: 696px;
+    width: 480px;
     margin: 0 auto;
     margin-bottom: 30px;
   }
@@ -874,7 +875,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .hero {
     background-color: var(--primary-dark-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img-desktop.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/hero-img-desktop.jpg");
     background-size: cover;
     max-width: 1600px;
     text-align: center;
