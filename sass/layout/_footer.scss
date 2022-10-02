@@ -1,0 +1,224 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: var(--primary-dark-color);
+}
+@media screen and (max-width: 767px){
+.footer-box {
+    text-align: center;
+    margin-bottom: 60px;
+}}
+
+
+.footer-box {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.cursor {
+  cursor: default;
+  font-style: normal;
+}
+.maps {
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--primary-bg-color);
+}
+
+.social-list-adres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.btn {
+  @extend %flex-align;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: 0px solid transparent;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  cursor: pointer;
+  background-color: var(--primery-accent-color);
+  color: var(--secondaty-bg-color);
+  transition: background-color var(--timing-function);
+}
+.footer-list {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.address {
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.icon-adres__link {
+  @extend %flex-align;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  fill: var(--primary-bg-color);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--primery-accent-color);
+  }
+}
+
+.social-adres-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-bg-color);
+}
+
+.footer-text-adres {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+}
+.text-adres {
+  text-align: center;
+  color: var(--primary-bg-color);
+  line-height: 1.14;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.text-adres__item {
+  text-align: center;
+  color: var(--primary-bg-color);
+  line-height: 1.14;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-form-field {
+  width: 100%;
+}
+.btn-svg {
+  margin-left: 10px;
+}
+.form-subscription__mail-list {
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+  border-radius: 4px;
+  background: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.form-subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adres-li {
+  margin-bottom: 9px;
+}
+.menu-adress {
+  display: block;
+  margin-top: 20px;
+ font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .box-web {
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .footer-box {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .form-subscription {
+    width: 450px;
+  }
+
+  .footer-list {
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0;
+  }
+  .footer-form-thumb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.form-subscription {
+    margin-top: 60px;
+}}
+
+
+@media screen and (min-width: 1200px) {
+  .footer-form-field {
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+  }
+  .footer-form-thumb {
+    width: 570px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footer-box {
+    text-align: left;
+  }
+  .text-adres {
+    text-align: start;
+    margin-left: 93px;
+  }
+  .text-adres__item {
+    text-align: start;
+  }
+
+  .form-subscription {
+    display: block;
+    width: auto;
+  }
+  
+  .form-subscription__mail-list {
+    width: 358px;
+    height: 50px;
+    margin-bottom: 0;
+    margin-left: 93px;
+  }
+  .footer-list {
+    margin-left: 70px;
+  }
+}
