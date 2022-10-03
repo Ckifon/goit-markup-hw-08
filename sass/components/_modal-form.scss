@@ -86,24 +86,57 @@ textarea {
   background-color: var(--primery-accent-color);
   border: var(--primery-accent-color);
 }
+
 .checkbox:checked + .modal-form-own-checkbox .modal-form-own-checkbox-icon {
   display: block;
 }
+
 .checkbox {
   position: absolute;
   appearance: none;
 }
 
 .checkbox-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 0.58;
+  letter-spacing: 0.03em;
   display: flex;
   justify-content: center;
+  
+}
+
+@media screen and (max-width: 767px) {
+.checkbox-label {
+  font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
   letter-spacing: 0.03em;
+  line-height: 1.16;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .checkbox-label {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    }
 }
 
 .modal-form-own-checkbox {
-  width: 16px;
+    width: 16px;
   height: 15px;
   border: 1px solid #303030;
   border-radius: 2px;
@@ -120,6 +153,7 @@ textarea {
   text-align: center;
   color: var(--title-text-color);
 }
+
 .button-modal {
   width: 200px;
   text-align: center;
